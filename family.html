@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Family</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #ffe6f2;
+        }
+        header {
+            background-color: #ff99cc;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #ff6699;
+            padding: 10px;
+        }
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+        nav a:hover {
+            color: #ffe6f2;
+        }
+        .container {
+            max-width: 900px;
+            margin: 30px auto;
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        .family-row {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 30px;
+            gap: 15px;
+        }
+        .family-row div {
+            flex: 1;
+        }
+        .family-row img {
+            width: 100%;
+            max-width: 200px;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .family-row img:hover {
+            transform: scale(1.05);
+            box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+        }
+        .caption {
+            margin-top: 10px;
+            font-size: 14px;
+            color: #333;
+            text-align: center;
+        }
+        footer {
+            text-align: center;
+            background-color: #ff99cc;
+            color: white;
+            padding: 10px;
+            margin-top: 30px;
+            box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
+        }
+        footer a {
+            color: white;
+            margin: 0 10px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>My Family</h1>
+    </header>
+    <nav>
+        <a href="aboutdlaila.html">Home</a>
+        <a href="biodata.html">Biodata</a>
+        <a href="experience.html">My Experience</a>
+        <a href="education.html">Education</a>
+        <a href="family.html">My Family</a>
+        <a href="gallery.html">Gallery</a>
+    </nav>
+
+    <div class="container">
+        <div class="family-row">
+            <div>
+                <img src="images/penang.jpg" alt="Family Member 1" onclick="playSound()">
+                <p class="caption">We went to Penang for a short vacation</p>
+            </div>
+            <div>
+                <img src="images/kahwin.jpg" alt="Family Member 2" onclick="playSound()">
+                <p class="caption">My sister got married in 2023</p>
+            </div>
+            <div>
+                <img src="images/umrah.jpg" alt="Family Member 3" onclick="playSound()">
+                <p class="caption">My family went for Umrah</p>
+            </div>
+        </div>
+        <div class="family-row">
+            <div>
+                <img src="images/graduation.jpg" alt="Family Member 4" onclick="playSound()">
+                <p class="caption">My sister's graduation</p>
+            </div>
+            <div>
+                <img src="images/rokiah.jpg" alt="Family Member 5" onclick="playSound()">
+                <p class="caption">This is our cat, Rokiah</p>
+            </div>
+            <div>
+                <img src="images/uni pic.jpg" alt="Family Member 6" onclick="playSound()">
+                <p class="caption">First picture at UiTM Rembau</p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>Follow me on:</p>
+        <a href="https://www.instagram.com/">
+            <img src="images-20241113T042315Z-001/instagram-logo-24.png" width="20px"></a>
+        <a href="https://www.tiktok.com/@stardustslly">
+            <img src="images-20241113T042315Z-001/tiktok-logo-24.png" width="20px"></a>
+    </footer>
+
+    <audio id="click-sound">
+        <source src="audio/Die With A Smile - Lady Gaga   Bruno Mars.m4a" type="audio/mp3">
+        Your browser does not support the audio element.
+    </audio>
+
+    <script>
+        function playSound() {
+            var audio = document.getElementById("click-sound");
+            audio.play();
+        }
+    </script>
+
+</body>
+</html>

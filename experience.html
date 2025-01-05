@@ -1,0 +1,139 @@
+l>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Experience</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #ffe6f2;
+        }
+        header {
+            background-color: #ff99cc;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #ff6699;
+            padding: 10px;
+        }
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .experience {
+            display: flex;
+            margin-bottom: 20px;
+            align-items: center;
+        }
+        .experience img {
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+        .experience:nth-child(odd) {
+            flex-direction: row;
+        }
+        .experience:nth-child(even) {
+            flex-direction: row-reverse;
+        }
+        .experience div {
+            padding: 20px;
+        }
+        footer {
+            text-align: center;
+            background-color: #ff99cc;
+            color: white;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+        footer a {
+            color: white;
+            margin: 0 10px;
+            text-decoration: none;
+        }
+        .caption {
+            text-align: justify;
+            max-width: 600px;
+            margin: auto;
+        }
+    </style>
+</head>
+<body>
+    <header>
+    
+        <h1>My Experience</h1>
+    </header>
+    <nav>
+        <a href="aboutdlaila.html">Home</a>
+        <a href="biodata.html">Biodata</a>
+        <a href="experience.html">My Experience</a>
+        <a href="education.html">Education</a>
+        <a href="family.html">My Family</a>
+        <a href="gallery.html">Gallery</a>
+    </nav>
+
+    <div class="container">
+        <div class="experience">
+            <img src="images/intern pic.jpg" alt="Internship Experience">
+            <div class="caption">
+                <h3>MY INTERNSHIP</h3>
+                <p>During my internship, I had the opportunity to learn extensively about food manufacturing. Over the course of two months, I gained valuable insights into the production processes, quality control, and the intricacies involved in ensuring that products meet industry standards. One of the most exciting experiences was participating in a food event for the first time, where I helped promote the products manufactured by the company I was interning with.</p>
+                <p>This event was a unique platform for me to apply the knowledge I had acquired during my internship and engage with customers directly. I learned about marketing strategies, customer preferences, and the importance of brand representation. Overall, this internship was an enriching experience that provided me with both practical skills and a deeper understanding of the food manufacturing industry.</p>
+            </div>
+        </div>
+
+        <div class="experience">
+            <img src="images/glamping ic.jpg" alt="Glamping Experience">
+            <div class="caption">
+                <h3>GLAMPING IN PORT DICKSON</h3>
+                <p>I had my first glamping experience with my friends for two days and one night in Port Dickson, and it was truly unforgettable. The idea of combining the thrill of camping with the comfort of modern amenities excited all of us. We arrived at the site, set amidst a scenic beachside location, with cozy tents already set up, complete with comfortable beds and basic facilities.</p>
+                <p>As the evening approached, we started our barbecue session. The smell of grilled food filled the air as we cooked and shared laughter. With the waves gently crashing in the background, the night took on a magical quality. After the meal, we gathered around, singing our favorite songs under the starry sky, accompanied by the soothing sea breeze. The camaraderie and the serene environment made the experience even more special.</p>
+                <p>Glamping in Port Dickson was a perfect blend of relaxation and adventure, and spending quality time with friends made it a memory I'll always cherish.</p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>Follow me on:</p>
+        <a href="https://www.instagram.com/">
+            <img src="images-20241113T042315Z-001/instagram-logo-24.png" width="20px"></a>
+        <a href="https://www.tiktok.com/@stardustslly">
+            <img src="images-20241113T042315Z-001/tiktok-logo-24.png" width="20px"></a>
+    </footer>
+    </footer>
+    <script>
+        function updateDateTime() {
+            const now = new Date();
+            const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+            const date = now.toLocaleDateString(undefined, options);
+            const time = now.toLocaleTimeString();
+            document.getElementById('datetime').innerText = `${date} | ${time}`;
+        }
+        setInterval(updateDateTime, 1000); // Update every second
+        updateDateTime(); // Initial call
+    </script>
+</body>
+</html>

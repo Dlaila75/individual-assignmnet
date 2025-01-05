@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Education</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f8ff;
+        }
+        header {
+            background-color: #ff99cc;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #ff6699;
+            padding: 10px;
+        }
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        .timeline {
+            position: relative;
+            padding: 20px;
+            border-left: 4px solid #ff6699;
+        }
+        .timeline .event {
+            margin-bottom: 30px;
+            position: relative;
+        }
+        .timeline .event::before {
+            content: "";
+            position: absolute;
+            left: -8px;
+            top: 0;
+            width: 16px;
+            height: 16px;
+            background-color: #ff6699;
+            border-radius: 50%;
+        }
+        .timeline .event img {
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+        .timeline .event .description {
+            margin-left: 20px;
+            padding: 10px;
+            background-color: #ffe6f2;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        .timeline .event .year {
+            margin-top: 10px;
+            font-style: italic;
+            color: #555;
+        }
+        footer {
+            text-align: center;
+            background-color: #ff99cc;
+            color: white;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+        footer a {
+            color: white;
+            margin: 0 10px;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>My Education Timeline</h1>
+    </header>
+    <nav>
+        <a href="aboutdlaila.html">Home</a>
+        <a href="biodata.html">Biodata</a>
+        <a href="experience.html">My Experience</a>
+        <a href="education.html">Education</a>
+        <a href="family.html">My Family</a>
+        <a href="gallery.html">Gallery</a>
+    </nav>
+
+    <div class="container">
+        <div class="timeline">
+            <div class="event">
+                <img src="images/sekolah rendah.jpg" usemap="#sekolah rendah.jpg">
+
+                <map name="sekolah rendah.jpg">
+                    <area target="_blank" alt="primary school" title="primary school" href="http://skbukitberuntung2.blogspot.com/" coords="284,197,158" shape="circle">
+                </map>
+                <div class="description">
+                    <h3>Primary School</h3>
+                    <p>My primary school years were filled with exciting discoveries
+                     in subjects like math, science, and English. I made lifelong friends
+                      and participated in extracurricular activities like sports.</p>
+                    <p class="year">2011 - 2016</p>
+                </div>
+            </div>
+
+            <div class="event">
+                <img src="images/sekolah menengah.jpg" alt="Secondary School">
+                <div class="description">
+                    <h3>Secondary School</h3>
+                    <p>During secondary school, I focused more on my academic subjects and
+                     developed a passion for subjects such as business and literature. I also joined clubs
+                      like public speaking.</p>
+                    <p class="year">2017 - 2021</p>
+                </div>
+            </div>
+
+            <div class="event">
+                <img src="images/uitm rembau.jpg" alt="Diploma">
+                <div class="description">
+                    <h3>Diploma</h3>
+                    <p>After completing secondary school, I pursued a diploma in information management, 
+                        which aligned with my career goals. This phase deepened my knowledge and equipped 
+                        me with practical skills for the future..</p>
+                    <p class="year">2021 - 2025</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>Follow me on:</p>
+        <a href="https://www.instagram.com/">
+            <img src="images-20241113T042315Z-001/instagram-logo-24.png" width="20px"></a>
+        <a href="https://www.tiktok.com/@stardustslly">
+            <img src="images-20241113T042315Z-001/tiktok-logo-24.png" width="20px"></a>
+    </footer>
+</body>
+</html>
